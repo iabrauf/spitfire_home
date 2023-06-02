@@ -84,3 +84,51 @@
   height: 96px;
   width: 90%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.call-outs-container {
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+.call-out {
+  padding: 10px;
+  flex-basis: 20%;
+  margin-top: 10px;
+}
+
+.call-out img {
+  width: 305px;
+  height: 203px;
+}
+
+@media(min-width:1000px){
+    .call-outs-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+  }
