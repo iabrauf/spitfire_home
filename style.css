@@ -126,3 +126,172 @@ body {
   }
 }
 
+
+/*  Header under navbar sort of slide  */
+
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width:769px) {
+
+  .overlay p {
+    font-size: 30px !important;
+  }
+}
+
+.bg-video {
+  position: relative;
+}
+
+.bg-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 92vh;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92vh;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  width: 67%;
+  top: 65%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+
+}
+
+
+.overlay p {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.overlay p {
+  opacity: 0;
+  display: block;
+  transform: translateY(100%);
+  transition: transform 500ms ease-in-out 0.5s;
+  animation: wipeUp 1.2s forwards 3.2s;
+}
+
+@keyframes wipeUp {
+
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-input {
+  display: flex;
+  background-color: white;
+  height: 15vh;
+}
+
+.form-input {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 500ms ease-in-out 0.5s;
+  animation: wipeUp 1s forwards 2s;
+}
+
+.form-textinput {
+  height: 88%;
+  width: 90%;
+  flex: 1;
+}
+
+.form-textinput input {
+  border: none;
+  height: 114%;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  padding: 35px;
+}
+
+
+.slider-image {
+  margin-top: 43px;
+}
+
+.form-img {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-img>p {
+  color: black;
+  font-size: 12px;
+}
+
+.form-img>button {
+  background-color: #998152;
+  color: #fff;
+  width: 145px;
+  height: 45px;
+  border: none;
+  ;
+  font-size: 14px;
+
+}
+
+@media only screen and (max-width:425px) {
+  .overlay p {
+    font-size: 30px !important;
+  }
+}
+
+
+@media only screen and (min-width:300px) and (max-width:769px) {
+  .form-input {
+    padding: 0px 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    width: 100%;
+    height: 25vh;
+  }
+
+  .form-textinput input {
+    flex: 1;
+    font-size: 15px;
+    padding: 0;
+    height: 150% !important;
+  }
+
+  .form-img img {
+    flex: 1;
+  }
+
+  .form-img>button {
+    flex: 1;
+  }
+
+  .form-img>p {
+    display: none;
+  }
+
+  .slider-image {
+    display: none;
+  }
+
+}
