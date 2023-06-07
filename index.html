@@ -2,9 +2,16 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon"
     href="https://assets.spitfirehomes.co.uk/app/uploads/2021/02/19134943/cropped-android-chrome-512x512-1-1-150x150.png"
     sizes="32x32">
@@ -13,62 +20,30 @@
 </head>
 
 <body>
-  <div class="navheader">
+
+
+  <!-- Navbar -->
+  <section class="navheader">
     <div class="navheader-left">
+      <div class="search-icon">
+        <button><img width="18px" height="18px" src="images/search-icon.svg"></button>
+      </div>
       <ul>
         <li>FIND YOUR HOME</li>
-        <li>BUYING WITH SPITFIRE</li>
+        <li>BUYING WITH SPITFIRE
+          <img width="19x" height="19px" src="images/arrow-header.svg">
+        </li>
       </ul>
     </div>
     <div class="navheader-center">
-      <img src="images/spitfire-logo.svg">
+      <img id="nav-icon1" src="images/spitfire-logo.svg">
+      <img id="nav-icon2" src="images/responsice-nav.svg">
     </div>
     <div class="navheader-right">
-      <img id='hideitem' src="images/heart.svg">
-      <img src="images/menu-duo-lg-svgrepo-com.svg">
+      <img id="hideitem" width="18px" height="18px" src="images/heart.svg">
+      <i class="fa-solid fa-bars"></i>
     </div>
-  </div>
-  <div class="main-container">
-    <div class="bg-video">
-      <video width="100%" height="620" autoplay muted loop>
-        <source src="video/Hawkstone-Kitchen.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="overlay">
-      <p>Creating sustainable communities,
-        designed to inspire</p><br>
-        <form>
-          <input type="text">
-        </form>
-    </div>
-  </div>
-
-  
-<div class="call-outs-container">
-  <div class="call-out">
-    <h4>We are an award-winning homebuilder with a passion for creating stylish and design-led properties that our customers are proud to call home.</h4>
-    <p>Explore a selection of properties currently available from Spitfire Homes.</p>
-    <button>FIND YOUR HOME</button>
-  </div>
-
-  <div class="call-out">
-    <img src="images/The-Gate-1-1024x683.webp">      
-    <h4>ABOUT US</h4>
-    <p> Forward-thinking, design-led and committed to quality; we are Spitfire Homes.</p>
-  </div>
-
-  <div class="call-out">
-    <img src="images/the-spitfire-difference-1024x627.webp">  
-    <h4>THE SPITFIRE DIFFERENCE</h4>
-    <p>At Spitfire, we carefully consider each home as if it were our own.
-    </p>
-  </div>
-  <div class="call-out">
-    <img src="images/3Z9A6633-Custom-1024x683.webp">  
-    <h4>A COMMITMENT TO SUSTAINABILITY</h4>
-    <p>Delivering sustainable homes that are as efficient as they are stylish.      </p>
-  </div>
-</div>
+  </section>
 
 </body>
 
