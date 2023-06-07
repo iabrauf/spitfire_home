@@ -1,17 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://assets.spitfirehomes.co.uk/app/uploads/2021/02/19134943/cropped-android-chrome-512x512-1-1-150x150.png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon"
+    href="https://assets.spitfirehomes.co.uk/app/uploads/2021/02/19134943/cropped-android-chrome-512x512-1-1-150x150.png"
+    sizes="32x32">
   <title>Home | Spitfire Homes</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div>
-   <header>
-   </header>
+
+
+  <!-- Navbar -->
+  <section class="navheader">
+    <div class="navheader-left">
+      <div class="search-icon">
+        <button><img width="18px" height="18px" src="images/search-icon.svg"></button>
+      </div>
+      <ul>
+        <li>FIND YOUR HOME</li>
+        <li>BUYING WITH SPITFIRE
+          <img width="19x" height="19px" src="images/arrow-header.svg">
+        </li>
+      </ul>
+    </div>
+    <div class="navheader-center">
+      <img id="nav-icon1" src="images/spitfire-logo.svg">
+      <img id="nav-icon2" src="images/responsice-nav.svg">
+    </div>
+    <div class="navheader-right">
+      <img id="hideitem" width="18px" height="18px" src="images/heart.svg">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+
+
+  <!-- Header under navbar sort of slide -->
+<section class="main-container">
+  <div class="bg-video">
+    <video autoplay muted loop>
+      <source src="video/Hawkstone-Kitchen.mp4" type="video/mp4">
+    </video>
   </div>
+  <div class="video-overlay"></div>
+  <div class="overlay">
+    <p>Creating sustainable communities,
+      designed to inspire</p><br>
+    <form class="form-input">
+      <div class="form-textinput">
+        <input placeholder="Search by postcode or area.." type="text">
+      </div>
+      <div class="form-img">
+        <p><img style="margin: -4px 10px;" src="images/current.svg">Current Location</p>
+        <button>FIND A HOME</button>
+      </div>
+    </form>
+    <div class="slider-image">
+      <img width="18px" height="18px" src="images/arrow.svg">
+    </div>
+  </div>
+</section>
+
+
+<!-- interface of 4 coloumns unders header -->
+<section class="call-outs-container">
+  <div class="call-out">
+    <h5>We are an <strong> award-winning homebuilder </strong> with a passion for creating stylish and design-led
+      properties that our customers are proud to call home.</h5>
+    <p>Explore a selection of properties currently available from Spitfire Homes.</p>
+    <button id="callout-button">FIND YOUR HOME</button>
+  </div>
+
+  <div class="call-out">
+    <img src="images/The-Gate-1-1024x683.webp">
+    <h6>ABOUT US</h6>
+    <p> Forward-thinking, design-led and committed to quality; we are Spitfire Homes.</p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+
+  <div class="call-out">
+    <img src="images/the-spitfire-difference-1024x627.webp">
+    <h6>THE SPITFIRE DIFFERENCE</h6>
+    <p>At Spitfire, we carefully consider each home as if it were our own.
+    </p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+  <div class="call-out">
+    <img src="images/3Z9A6633-Custom-1024x683.webp">
+    <h6>A COMMITMENT TO SUSTAINABILITY</h6>
+    <p>Delivering sustainable homes that are as efficient as they are stylish.</p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+</section>
+
+<!-- interface of 2 coloumns -->
+<section class="text-img">
+  <div class="text-img-first">
+    <h5>Introducing Spitfire Concierge</h5>
+    <p>If you are considering a new home with Spitfire but haven’t sold your existing property, then Spitfire
+      Concierge is for you.</p>
+    <button>FIND OUT MORE</button>
+  </div>
+  <div class="text-img-second">
+    <img src="images/3Z9A5800-Large.jpeg">
+  </div>
+</section>
+
+
+<!--  interface of 4 coloumns -->
+<section class="call-outs-container">
+  <div class="call-out">
+    <h5><strong>Latest News</strong> & Announcements</h5>
+    <p>The latest news, updates and announcements from Spitfire Homes.</p>
+    <button id="callout-button">VIEW ALL</button>
+  </div>
+
+  <div class="call-out">
+    <img src="images/slide1.jpg">
+    <span class="page-block__date">01 Jun 2023</span>
+    <h6>
+      TAKE A LOOK AT THESE BRAND NEW HOMES BUILT IN A BEAUTIFUL VILLAGE NEAR NORTHAMPTON</h6>
+    <p>Named Pembleton, its varied selection of 44 detached, semi-detached and bungalow properties combine
+      traditionally-inspired exteriors with a mix of red brickwork, ivory render and premium ironstone.</p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+
+  <div class="call-out">
+    <img src="images/slide2.jpg">
+    <span class="page-block__date">25 MAY 2023</span>
+    <h6>MIDLANDS NEIGHBOURHOOD TAKES MAJOR STEP FORWARD WITH PLANNING PERMISSION GRANTED FOR NEW HOMES</h6>
+    <p>Planning permission has been granted for Spitfire Homes to deliver a stylish collection of 48 new homes in
+      Wolston, Warwickshire.
+    </p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+  <div class="call-out">
+    <img src="images/slide3.webp">
+    <span class="page-block__date">12 APR 2023</span>
+    <h6>FIRST PHASE OF NEW DAVENTRY NEIGHBOURHOOD TAKES MAJOR STEP FORWARD WITH OVER 200 HOMES PLANNED</h6>
+    <p>Spitfire Homes and Crest Nicolson secured reserved matters approval to build 222 properties on land at Malabar
+      Farm.</p>
+    <button class="call-out-button">Learn More </button>
+  </div>
+</section>
+
+
+<!--  4 cards interface-->
+<section class="card">
+  <div>
+    <section class="card-container">
+      <section class="card-image">
+        <img src="images/card1.webp">
+      </section>
+      <section class="card-content">
+        <h6>LAND REQUIRED</h6>
+        <p>We are actively seeking new residential development opportunities across the Midlands region.</p>
+      </section>
+    </section>
+    <section class="card-container">
+      <section class="card-image">
+        <img src="images/card2.webp">
+      </section>
+      <section class="card-content">
+        <h6>
+          THE SPITFIRE DIFFERENCE</h6>
+        <p>At Spitfire, we carefully consider each home as if it were our own.</p>
+      </section>
+    </section>
+  </div>
+  <div>
+    <section class="card-container">
+      <section class="card-image">
+        <img src="images/card3.webp">
+      </section>
+      <section class="card-content">
+        <h6>CUSTOMER CARE</h6>
+        <p>Report an issue, find out about your warranty and provide feedback on our service.
+        </p>
+      </section>
+    </section>
+    <section class="card-container">
+      <section class="card-image">
+        <img src="images/card4.webp">
+      </section>
+      <section class="card-content">
+        <h6>CONTACT US</h6>
+        <p>Find out how to get in touch.</p>
+      </section>
+    </section>
+  </div>
+</section>
+
+
+
+<!--  Footer -->
+<footer>
+  <div class="footer-main">
+    <div id="footer-left-1">
+      <div class="footer-content">
+        <img src="images/Spitfire-footer-logo.svg">
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-right-3">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h6>QUICK LINKS</h6>
+          <ul>
+            <li>ABOUT US</li>
+            <li>BUYING WITH SPITFIRE</li>
+            <li>LAND REQUIRED</li>
+            <li>NEWS & UPDATES</li>
+            <li>SUSTAINABILITY</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-content">
+          <h6>HELP</h6>
+          <ul>
+            <li>CONTACT US</li>
+            <li>SPITFIRE CONCIERGE</li>
+            <li>CUSTOMER CARE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="contact-number"><span>Telephone:</span><span>0344 736 0074</span>
+            <span>Customer Care:</span><span>0345 307 3617</span>
+          </div>
+          <div class="address">
+            <p>Spitfire Homes<br>
+              International Drive <br>
+              Solihull<br>
+              B90 4WA</p>
+          </div>
+        </div>
+        <div class="footer-images-main">
+          <div class="footer-images">
+            <img src="images/footer1.svg" alt="footer-image">
+            <img src="images/footer2.png" alt="footer-image">
+            <img src="images/footer3.svg" alt="footer-image">
+            <img src="images/footer4.png" alt="footer-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <ul>
+        <li>MODERN SLAVERY POLICY</li>
+        <li>POLICY STATEMENTS</li>
+        <li>PRIVACY NOTICE</li>
+        <li>COOKIES</li>
+      </ul>
+    </div>
+    <div>
+      <p id="bottom-text">
+        Spitfire Homes is the trading name of Spitfire Bespoke Homes Limited, The Gate, International Drive, Solihull
+        B90 4WA · Company Registration Number: 04395875 & VAT No: 409 4252 06
+      </p>
+      <img id="footer-icon" width="24px" height="24px" src="images/footericon.svg">
+    </div>
+  </div>
+
+
+</footer>
+
+
+
 </body>
+
 </html>
