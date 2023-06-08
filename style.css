@@ -248,9 +248,11 @@ body {
   width: 145px;
   height: 45px;
   border: none;
-  ;
   font-size: 14px;
+}
 
+.form-img > button:hover{
+   background-color: #515354;
 }
 
 @media only screen and (max-width:425px) {
@@ -308,8 +310,14 @@ body {
   padding: 10px;
 }
 
+.call-out img {
+  object-fit: cover;
+  width: 95%;
+  height: 55%;
+  transition: height 200ms ease-in;
+}
 .call-out img:hover {
-  height: 50%;
+  height: 48%;
 }
 
 
@@ -340,6 +348,13 @@ body {
   border: none;
 }
 
+#callout-button:hover {
+  background-color: rgb(42, 49, 46);
+  color: white;
+}
+
+
+
 .call-out-button {
   background-color: white;
   border: none;
@@ -347,10 +362,7 @@ body {
   color: #998152;
 }
 
-.call-out img {
-  width: 100%;
-  height: 50%;
-}
+
 
 @media(min-width:1000px) {
   .call-outs-container {
@@ -392,9 +404,12 @@ body {
 .text-img-first button {
   height: 48px;
   width: 161px;
-  background-color: rgb(31, 34, 33);
+  background-color: #2A312E;
   color: #fff;
   font-size: 12px;
+}
+.text-img-first button:hover {
+  background: rgb(31, 34, 33);
 }
 
 .text-img-second {
@@ -453,6 +468,11 @@ body {
   width: 50%;
   height: 85vh;
   box-shadow: 0px 10px 40px 0px rgba(42, 49, 46, 0.2);
+  transition: 300ms ease-in;
+}
+
+.card-container:hover {
+  transform: translateY(-20px);
 }
 
 
