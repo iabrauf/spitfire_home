@@ -8,6 +8,35 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/*  FLoating whatsapp button at right bottom*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:12px;
+	right:12px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size: 2.4rem;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.float:hover{
+  content: url(https://cdn-icons-png.flaticon.com/128/1828/1828939.png);
+  width:60px;
+	height:60px;
+  background-color: white;
+  cursor: pointer;
+}
+
 
 /*  Navbar */
 .navheader {
@@ -53,6 +82,116 @@ body {
   align-items: center;
 }
 
+@media only screen and (min-width:2500px) {
+
+  /* navbar for 4k */
+.navheader{
+  font-size: 25px;
+  height: 15vh;
+}
+#nav-icon1 {
+  width: 25%;
+}
+.navheader-right img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* section under navbar */
+.overlay p {
+  font-size: 60px !important;
+  font-weight: 300;
+}
+
+.form-textinput input{
+  font-size: 25px !important;
+}
+.form-img p {
+  font-size: 25px !important;
+}
+.form-img > button {
+  width: 30% !important;
+  height: 50% !important;
+  font-size: 20px !important;
+}
+.call-outs-container{
+  height: 73vh !important;
+}
+/* .call-out{
+  height: 100% !important;
+  margin-top: 15rem;
+} */
+.call-out h5{
+  font-size: 40px !important;
+  line-height: 52px !important;
+}
+.call-out h6{
+  font-size: 25px !important;
+  margin-top: 10px;
+}
+.call-out p{
+      font-size: 23px !important;
+}
+.call-out img{
+    width: 97% !important;
+}
+.call-out-button{
+  font-size: 18px;
+}
+
+.text-img-first h5{
+  font-size: 40px !important;
+}
+.text-img-first p{
+  font-size: 20px !important;
+}
+.text-img-first button{
+  font-size: 14px !important;
+}
+.card-content h6 {
+  font-size: 30px !important;
+}
+.card-content p{
+  font-size: 20px !important;
+}
+.footer-content img{
+  width: 60%;;
+}
+.social-icons i {
+  margin-right: 60px !important;
+  font-size: 40px;
+}
+.social-icons i {
+    margin-right: 60px;
+    font-size: 40px;
+}
+.footer-content h6{
+  font-size: 40px !important;
+}
+.footer-content ul li{
+  font-size: 25px !important;
+}
+.contact-number {
+  font-size: 30px !important;
+}
+.address>p {
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+.footer-images img{
+  margin-right: 30px !important;
+}
+.footer-bottom-container li {
+  flex-basis: 17% !important;
+  font-size: 20px !important;
+}
+#bottom-text {
+  font-size: 20px !important;
+}
+}
+
+ 
 @media screen and (max-width:769px) {
   .navheader-left ul {
     display: none !important;
@@ -248,9 +387,11 @@ body {
   width: 145px;
   height: 45px;
   border: none;
-  ;
   font-size: 14px;
+}
 
+.form-img > button:hover{
+   background-color: #515354;
 }
 
 @media only screen and (max-width:425px) {
@@ -304,12 +445,17 @@ body {
 
 .call-out {
   flex-basis: 30%;
-  height: 100%;
   padding: 10px;
 }
 
+.call-out img {
+  object-fit: cover;
+  width: 100%;
+  height: 55%;
+  transition: height 200ms ease-in;
+}
 .call-out img:hover {
-  height: 50%;
+  height: 48%;
 }
 
 
@@ -340,6 +486,13 @@ body {
   border: none;
 }
 
+#callout-button:hover {
+  background-color: rgb(42, 49, 46);
+  color: white;
+}
+
+
+
 .call-out-button {
   background-color: white;
   border: none;
@@ -347,17 +500,13 @@ body {
   color: #998152;
 }
 
-.call-out img {
-  width: 100%;
-  height: 50%;
-}
+
 
 @media(min-width:1000px) {
   .call-outs-container {
     margin-bottom: 14rem;
-    height: 55vh;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
 }
@@ -392,9 +541,12 @@ body {
 .text-img-first button {
   height: 48px;
   width: 161px;
-  background-color: rgb(31, 34, 33);
+  background-color: #2A312E;
   color: #fff;
   font-size: 12px;
+}
+.text-img-first button:hover {
+  background: rgb(31, 34, 33);
 }
 
 .text-img-second {
@@ -451,8 +603,13 @@ body {
   margin-top: 3rem;
   background-color: white;
   width: 50%;
-  height: 85vh;
+  height: 90vh;
   box-shadow: 0px 10px 40px 0px rgba(42, 49, 46, 0.2);
+  transition: 300ms ease-in;
+}
+
+.card-container:hover {
+  transform: translateY(-20px);
 }
 
 
@@ -474,7 +631,7 @@ body {
 }
 
 .card-content {
-  padding: 30px 30px;
+  padding: 15px 30px;
 }
 
 
